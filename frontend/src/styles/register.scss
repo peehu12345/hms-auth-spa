@@ -1,0 +1,79 @@
+/* Main Title */
+
+.title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+
+/* Form input wrapper */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+    label {
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 4px;
+    }
+    input {
+        padding: 10px;
+        border: 1px solid #c4c4c4;
+        border-radius: 5px;
+        outline: none;
+        &:focus {
+            border-color: #1b5fc4;
+        }
+    }
+}
+
+
+/* Register Button */
+
+.btn-primary {
+    width: 100%;
+    padding: 10px;
+    background: #c91e32;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    &:hover {
+        background: #a31728;
+    }
+}
+
+
+/* Bottom text */
+
+.alt-text {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    a {
+        color: #1b5fc4;
+        font-weight: 600;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+
+/* Responsive */
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 20px;
+    }
+    input {
+        font-size: 14px;
+    }
+}

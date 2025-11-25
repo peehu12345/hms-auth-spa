@@ -1,0 +1,209 @@
+/* ---------- PAGE WRAPPER ---------- */
+
+.auth-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    background: #f5f7fa;
+    /* slightly blue/grey white */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 36px;
+    box-sizing: border-box;
+}
+
+
+/* ---------- TOP "BROWSER" HEADER (full width) ---------- */
+
+.top-header {
+    width: 100%;
+    height: 50px;
+    background: #cdd6dd;
+    /* grey strip */
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    box-sizing: border-box;
+}
+
+
+/* small window dots on the left */
+
+.window-dots {
+    display: flex;
+    gap: 6px;
+}
+
+.window-dots span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #bfc7cd;
+}
+
+
+/* ---------- FORM CONTAINER (no white card) ---------- */
+
+
+/* this centers the form horizontally and places it slightly down from top header */
+
+.form-container {
+    width: 100%;
+    max-width: 430px;
+    /* matches screenshot width */
+    margin-top: 72px;
+    /* controls vertical position (tweak if needed) */
+    text-align: center;
+    display: block;
+    box-sizing: border-box;
+}
+
+
+/* Title styling */
+
+.title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 18px;
+    color: #111;
+}
+
+
+/* align labels left but keep container center */
+
+.form-group {
+    text-align: left;
+    margin: 8px auto 0;
+}
+
+
+/* input fields */
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #222;
+}
+
+.form-group input {
+    width: 100%;
+    height: 38px;
+    padding: 8px 10px;
+    border-radius: 4px;
+    border: 1px solid #d0d5d9;
+    background: #fff;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+
+/* Sign In button */
+
+.btn-primary {
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    margin-top: 18px;
+    background: #c71d28;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+/* forgot and signup lines */
+
+.forgot {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #0b63ce;
+}
+
+.alt-text {
+    margin-top: 18px;
+    font-size: 14px;
+    color: #222;
+}
+
+
+/* Footer branding — sits near bottom */
+
+.footer-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 36px;
+}
+
+
+/* Powered text */
+
+.powered {
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+}
+
+
+/* Skill (red) and Vertex (green + tick) */
+
+.skill {
+    color: #d62828;
+    font-weight: 800;
+    margin-left: 6px;
+}
+
+.vertex {
+    color: #18b24a;
+    font-weight: 800;
+    margin-left: 2px;
+}
+
+
+/* ---------- RESPONSIVE ---------- */
+
+
+/* mobile: keep the same look, bring form a bit closer to top */
+
+@media (max-width: 480px) {
+    .form-container {
+        max-width: 92%;
+        margin-top: 48px;
+    }
+    .title {
+        font-size: 20px;
+    }
+    .form-group input {
+        height: 40px;
+        font-size: 14px;
+    }
+    .btn-primary {
+        height: 42px;
+        font-size: 15px;
+    }
+}
+
+
+/* tablet */
+
+@media (min-width: 481px) and (max-width: 900px) {
+    .form-container {
+        max-width: 520px;
+        margin-top: 60px;
+    }
+}
+
+
+/* large desktop: keep the form centered but a little higher if screen is very tall */
+
+@media (min-width: 1300px) {
+    .form-container {
+        margin-top: 90px;
+    }
+}

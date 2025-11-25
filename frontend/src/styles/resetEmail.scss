@@ -1,0 +1,24 @@
+@use "./login" as *; // reuse shared styles
+.info {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 18px;
+    line-height: 20px;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 10px;
+    background: #c91e32;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 10px;
+    cursor: pointer;
+    &:hover {
+        background: #a31728;
+    }
+}
