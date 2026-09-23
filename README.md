@@ -3,7 +3,7 @@ A complete authentication module built for the Hospital Management System (HMS).
 Includes secure **User Registration, Login, JWT Authentication, Password Reset**,  
 and a modern, clean **responsive UI** designed in React.
 
----
+-------
 
 ##  Tech Stack
 
